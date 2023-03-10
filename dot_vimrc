@@ -1,0 +1,26 @@
+" Vim dotfile configuration
+" Winicius Allan @ UFCG
+
+" Show number of lines
+set number
+
+set nowrap
+
+" Indentation configs
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+
+" Search configs
+set hlsearch
+hi Search ctermbg=226 ctermfg=black
+
+" =====
+" Netrw
+" =====
+noremap <F2> :Lexplore<CR>
+let g:netrw_keepdir = 0
+let g:netrw_winsize = 30
+hi! link netwrMarkFile Search
+
