@@ -6,6 +6,7 @@ set number
 syntax on
 let mapleader=" "
 set nowrap
+let g:airline_theme='one'
 
 " Indentation configs
 set tabstop=4
@@ -36,3 +37,6 @@ hi! link netwrMarkFile Search
 set termguicolors
 set background=dark
 colorscheme solarized8_low
+
+set laststatus=2
+let g:lightline = { 'colorscheme': 'one' }
