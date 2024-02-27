@@ -21,4 +21,4 @@ export JAVA_HOME=/opt/homebrew/opt/openjdk
 ###########
 alias ll="ls -la"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-alias grep="grep --color=auto" 
+alias grep="grep --color=auto"
