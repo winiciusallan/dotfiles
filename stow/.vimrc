@@ -22,7 +22,6 @@ hi Search ctermbg=226 ctermfg=black
 
 augroup vimrcEx
   au!
-
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=70
 augroup END
