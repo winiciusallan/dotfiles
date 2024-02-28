@@ -1,6 +1,6 @@
 #/bin/bash
 
-FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/FiraCode.zip"
+FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip"
 
 # Linux default
 FONT_DIR=~/.local/share/fonts
@@ -16,9 +16,9 @@ mkdir -p $FONT_DIR
 echo "Downloading and applying ${FILE%.*} font..."
 cd ${FONT_DIR} && curl -fLOs ${FONT_URL}
 
-mkdir -p ${FILE%.*} && cd $_
+mkdir -p ${FILE%%.*} && cd $_
 
-if [[ ${FILE#*.} = "tar.gz" ]]; then
+if [[ ${FILE#*.} =~ tar.* ]]; then
 	tar xvf ../$FILE
 else
 	unzip ../$FILE -d ./
