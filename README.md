@@ -25,6 +25,11 @@ Aplica as configurações de fonte. Por padrão, **Fira Code**:
 ./setup font
 ```
 
+Uso geral:
+```
+./setup [package | font | -h | --help]
+```
+
 É possível mudar qual fonte você deseja instalar mudando o link para download no arquivo `./scripts/install-fonts.sh`
 
 Para remover uma configuração aplicada, é necessário rodar:
