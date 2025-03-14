@@ -9,25 +9,28 @@ if true then return {} end
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
-  -- add gruvbox
-  -- { "ellisonleao/gruvbox.nvim" },
-  -- { "marko-cerovac/material.nvim" },
-  -- { "catppuccin/nvim", lazy = true },
-  --
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "catppuccin",
-  --   },
-  -- },
-
-  -- change trouble config
   {
     "folke/trouble.nvim",
     -- opts will be merged with the parent spec
     opts = { use_diagnostic_signs = true },
   },
 
+  {
+    "hrsh7th/nvim-cmp",
+    opts = {
+      preselect = require("cmp").PreselectMode.None,
+      completion = {
+        autocomplete = false,
+      },
+      complete = {
+        completeopt = menu,
+        menuone,
+        noinsert,
+        noselect,
+      },
+    },
+    -- Default setup in README.md
+  },
   -- disable trouble
   { "folke/trouble.nvim", enabled = false },
 
@@ -169,6 +172,8 @@ return {
       vim.list_extend(opts.ensure_installed, {
         "tsx",
         "typescript",
+        "go",
+        "terraform",
       })
     end,
   },
