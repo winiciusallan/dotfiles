@@ -173,7 +173,7 @@ return {
         "tsx",
         "typescript",
         "go",
-        "terraform",
+        "python",
       })
     end,
   },

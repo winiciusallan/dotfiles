@@ -24,6 +24,7 @@ export PATH="$HOME/go/bin:$PATH"
 alias ll="ls -la"
 alias grep="grep --color=auto"
 alias c6="source ~/Documents/Faculdade/lsd/cloud/rc-files/c6-admin-openrc.sh"
+alias cloud-dev="source ~/Documents/Faculdade/lsd/cloud/rc-files/cd-admin-openrc.sh"
 alias c5="source ~/Documents/Faculdade/lsd/cloud/rc-files/admin-openrc.sh"
 alias swift-lang="/opt/homebrew/opt/swift/bin/swift"
 alias k="kubectl"
@@ -47,3 +48,12 @@ flush_cache() {
 
 # Created by `pipx` on 2024-12-11 01:38:38
 export PATH="$PATH:/Users/winiciusallan/.local/bin"
+
+# Kubectl completion
+function kubectl_completion {
+    autoload -Uz compinit
+    compinit
+    source <(kubectl completion zsh)
+}
+
+kubectl_completion
