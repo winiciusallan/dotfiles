@@ -1,0 +1,12 @@
+# Font configuration
+font-size = 14
+
+background-opacity = 1
+
+window-inherit-font-size = false
+macos-titlebar-style = hidden
+window-new-tab-position = end
+quit-after-last-window-closed = true
+macos-option-as-alt = true
+
+confirm-close-surface = false
