@@ -3,7 +3,6 @@ set $spotify flatpak run com.spotify.Client
 
 # Open terminal on tmux session
 exec swaymsg "workspace $workspace_term; \
-    exec 'if tmux ls; then $term -e tmux a -t0; else $term -e tmux; fi';
-    exec $neovim"
+    exec 'if tmux ls; then $term -e tmux a -t0; else $term -e tmux; fi'"
 exec swaymsg "workspace $workspace_browser; exec firefox"
 exec swaymsg "workspace $workspace_music; exec $spotify"

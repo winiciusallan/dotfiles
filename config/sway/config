@@ -1,6 +1,6 @@
 set $workspace_term 1:Terminal
 set $workspace_browser 2:Browser
-set $workspace_music 4:Browser
+set $workspace_music 4:Music
 
 ### Variables configuration
 include ./variables
