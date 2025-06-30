@@ -1,0 +1,24 @@
+default_border pixel 3
+smart_borders on
+smart_gaps on
+gaps inner 8
+
+set $grey       #323232
+set $lightblue #3daee9
+set $white      #eff0f1
+set $bg         #31363b
+set $black      #900000
+set $red        #CB4B16
+
+ # Sway theme
+ # class                   border     backgr.    text    indic.     child_border
+client.focused          $lightblue $bg        $white  $lightblue $lightblue
+client.focused_inactive $bg        $bg        $white  $bg        $bg
+client.unfocused        $bg        $bg        $white  $bg        $bg
+client.urgent           $red       $red       $white  $black     $black
+
+exec {
+    gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+    gsettings set org.gnome.desktop.interface icon-theme 'Adwaita-dark'
+    gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita-dark'
+}
