@@ -5,6 +5,8 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 
 bindsym $mod+Ctrl+Shift+l exec swaylock
+# Take screenshot and move to clipboard.
+bindsym $mod+Shift+p exec grim -g "$(slurp -d)" - | wl-copy
 
 # Start your launcher
 bindsym $mod+d exec $menu
@@ -59,6 +61,10 @@ bindsym $mod+7 workspace number 7
 bindsym $mod+8 workspace number 8
 bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
+
+# Between outputs
+bindsym $mod+Tab focus output right
+bindsym $mod+Shift+Tab move workspace output right
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
