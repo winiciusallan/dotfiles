@@ -56,10 +56,10 @@ include ./startup
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 input * {
-    xkb_layout br
+    xkb_layout br,us(intl)
     dwt enabled
     tap enabled
-    natural_scroll enabled
+    #natural_scroll enabled
     middle_emulation enabled
 }
 

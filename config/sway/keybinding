@@ -5,6 +5,8 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 
 bindsym $mod+Ctrl+Shift+l exec swaylock
+bindsym $alt+Shift+Tab input * xkb_switch_layout next
+
 # Take screenshot and move to clipboard.
 bindsym $mod+Shift+p exec grim -g "$(slurp -d)" - | wl-copy
 
