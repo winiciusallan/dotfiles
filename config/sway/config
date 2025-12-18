@@ -2,6 +2,8 @@ set $workspace_term 1:Terminal
 set $workspace_browser 2:Browser
 set $workspace_music 4:Music
 
+for_window [app_id="org.gnome.Calculator"] floating enable, border normal, move position cursor
+
 ### Variables configuration
 include ./variables
 
