@@ -16,5 +16,8 @@ return {
     window = {
       position = "right",
     },
+    diagnostics = {
+      enable = true,
+    },
   },
 }

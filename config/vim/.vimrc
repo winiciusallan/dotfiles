@@ -22,9 +22,11 @@ set hlsearch
 hi Search ctermbg=226 ctermfg=black
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType gitcommit setlocal textwidth=72
 
 augroup vimrcEx
   au!
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=70
 augroup END 
+
