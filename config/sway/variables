@@ -9,9 +9,20 @@ set $down j
 set $up k
 set $right l
 
+# Applications
 set $term foot
+set $neovim $term nvim
+set $spotify flatpak run com.spotify.Client
+set $slack flatpak run com.slack.Slack
 
 set $rofi_cmd rofi \
         -terminal '$term'
 set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
+
+# Workspace
+set $workspace_term 1:Terminal
+set $workspace_browser 2:Browser
+set $workspace_chat 3:Chat
+set $workspace_music 4:Music
+
 
