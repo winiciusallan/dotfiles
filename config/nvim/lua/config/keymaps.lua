@@ -12,3 +12,9 @@ map("n", "<leader>h", ":noh<cr>", { desc = "No highlight" })
 -- map("n", "<leader>e", "<cmd>Oil<CR>")
 map("n", "<leader>w>", "20<C-w>>", { desc = "Increase width" })
 map("n", "<leader>w<", "20<C-w><", { desc = "Increase width" })
+
+-- Don't override the default register and permit paste the same text
+-- multiple times
+map("x", "p", function()
+  return 'pgv"' .. vim.v.register .. "y`>"
+end, { expr = true, noremap = true })

@@ -13,9 +13,3 @@ vim.o.textwidth = 70
 vim.g.snacks_animate = false
 
 vim.api.nvim_create_augroup("vimrcEx", { clear = true })
-
--- vim.api.nvim_create_autocmd("FileType", {
---   group = "vimrcEx",
---   pattern = "*",
---   command = "setlocal textwidth=70",
--- })
