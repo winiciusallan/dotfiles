@@ -10,3 +10,5 @@ quit-after-last-window-closed = true
 macos-option-as-alt = true
 
 confirm-close-surface = false
+
+theme = Rose Pine
