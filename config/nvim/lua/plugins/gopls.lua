@@ -6,7 +6,7 @@ return {
         gopls = {
           settings = {
             gopls = {
-              gofumpt = true,
+              gofumpt = false,
               codelenses = {
                 gc_details = false,
                 generate = true,
