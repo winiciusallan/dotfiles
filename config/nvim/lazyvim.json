@@ -3,6 +3,7 @@
     "lazyvim.plugins.extras.dap.core",
     "lazyvim.plugins.extras.lang.go",
     "lazyvim.plugins.extras.lang.markdown",
+    "lazyvim.plugins.extras.lang.terraform",
     "lazyvim.plugins.extras.test.core"
   ],
   "install_version": 7,

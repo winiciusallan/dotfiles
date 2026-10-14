@@ -10,7 +10,7 @@ set $up k
 set $right l
 
 # Applications
-set $term foot
+set $term ghostty
 set $neovim $term nvim
 set $spotify flatpak run com.spotify.Client
 set $slack flatpak run com.slack.Slack

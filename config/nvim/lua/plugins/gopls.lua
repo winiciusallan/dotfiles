@@ -6,6 +6,10 @@ return {
         gopls = {
           settings = {
             gopls = {
+              capabilities = {
+                documentFormattingProvider = false,
+                documentRangeFormattingProvider = false,
+              },
               gofumpt = false,
               codelenses = {
                 gc_details = false,
@@ -19,8 +23,8 @@ return {
               },
               hints = {
                 assignVariableTypes = false,
-                compositeLiteralFields = true,
-                compositeLiteralTypes = true,
+                compositeLiteralFields = false,
+                compositeLiteralTypes = false,
                 constantValues = true,
                 functionTypeParameters = false,
                 parameterNames = false,

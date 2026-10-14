@@ -14,7 +14,7 @@ renamed = "r"
 deleted = "x"
 
 [aws]
-symbol = "aws "
+disabled = true
 
 [azure]
 symbol = "az "
@@ -68,7 +68,7 @@ symbol = "fnl "
 symbol = "fossil "
 
 [gcloud]
-symbol = "gcp "
+disabled = true
 
 [git_branch]
 symbol = "git "
